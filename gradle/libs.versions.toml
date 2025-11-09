@@ -1,15 +1,23 @@
 
 [versions]
-jupiter = "5.12.2"
+junit = "6.0.1"
+mockito = "5.20.0"
+jacorb = "3.9"
+
 
 [plugins]
-sonarqube = { id = "org.sonarqube", version = "6.2.0.5505" }
-dependencyanalysis = { id = "com.autonomousapps.dependency-analysis",  version = "1.32.0" }
+sonarqube = { id = "org.sonarqube", version = "7.0.1.6134" } #6.2.0.5505" }
+dependencyanalysis = { id = "com.autonomousapps.dependency-analysis",  version = "3.4.1" }
 
 [libraries]
-guava = { module = "com.google.guava:guava", version = "28.1-jre" }
-junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "jupiter" }
-junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "jupiter" }
-junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version = "1.12.2" }
-jgrapht = { module = "org.jgrapht:jgrapht-core", version = "1.5.1" }
+guava = { module = "com.google.guava:guava", version = "33.5.0-jre" }
+junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
+junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+jgrapht = { module = "org.jgrapht:jgrapht-core", version = "1.5.2" }
 commonsMath = { module ="org.apache.commons:commons-math3", version = "3.6.1" }
+mockitoJupiter = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+jacorb = { module = "org.jacorb:jacorb", version.ref = "jacorb" }
+jacorbOmgApi = { module = "org.jacorb:jacorb-omgapi", version.ref = "jacorb" }
+jacorbIdlCompiler = { module = "org.jacorb:jacorb-idl-compiler", version.ref = "jacorb" }
