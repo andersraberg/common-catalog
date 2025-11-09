@@ -1,0 +1,13 @@
+
+[versions]
+jupiter = "5.12.2"
+
+[plugins]
+sonarqube = { id = "org.sonarqube", version = "6.2.0.5505" }
+dependencyanalysis = { id = "com.autonomousapps.dependency-analysis",  version = "1.32.0" }
+
+[libraries]
+guava = { module = "com.google.guava:guava", version = "28.1-jre" }
+junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "jupiter" }
+junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "jupiter" }
+junitPlatformLauncher = { module = "org.junit.platform:junit-platform-launcher", version = "1.12.2" }
